@@ -13,7 +13,7 @@ class MacChanger():
             self.alterar_mac_linux()
                 
     def mostrar_mac(self):
-        """Mostra o MAC atual da interface"""
+        #mostra o endereco mac atual
         subprocess.run(["ip", "link", "show", self.interface], check=True)
         
     def path_root(self):
